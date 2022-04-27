@@ -4,74 +4,87 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.scss" />
     <title>Document</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header__pokemonTitle">
-        <div class="header__Type">Pokemon de base</div>
-        <h1 class="header__name">Bulbizarre</h1>
+    <header class="identity">
+      <div class="identity__pokemonTitle">
+        <div class="identity__Type">Pokemon de base</div>
+        <h1 class="identity__name">Bulbizarre</h1>
       </div>
 
-      <div class="header__pokemonTypeDescription">
-        <h2 class="header__PV">40 PV</h2>
+      <div class="identity__pokemonTypeDescription">
+        <h2 class="identity__life">40 PV</h2>
         <img
           src="./assets/img/leaf.png"
           alt="type feuille"
-          class="header__pokemonTypeImage"
+          class="identity__pokemonTypeImage"
         />
       </div>
     </header>
 
-    <div class="image">
-      <figure class="image__pokemonImage">
-        <img
-          src="./assets/img/bulbizarre.jpg"
-          alt="bulbizarre"
-          class="image__pokemonImage"
-        />
-        <caption class="image__imageCaption">
-          Pokemon Graine. Taille : 0,7m, poids: 6,9kg
-        </caption>
-      </figure>
-    </div>
+    <figure class="appearance">
+      <img
+        src="./assets/img/bulbizarre.jpg"
+        alt="bulbizarre"
+        class="appearance__pokemonImage"
+      />
+      <figcaption class="appearance__imageCaption">
+        Pokemon Graine. Taille : 0,7m, poids: 6,9kg
+      </figcaption>
+    </figure>
 
-    <div class="attack">
-      <img
-        src="./assets/img/leaf.png"
-        alt="type feuille"
-        class="attack__pokemonTypeImage"
-      />
-      <img
-        src="./assets/img/leaf.png"
-        alt="type feuille"
-        class="attack__pokemonTypeImage"
-      />
+    <section class="attack">
+      <div class="attack__cost">
+        <img
+          src="./assets/img/leaf.png"
+          alt="cout feuille"
+          class="attack__pokemonTypeImage"
+        />
+        <img
+          src="./assets/img/leaf.png"
+          alt="cout feuille"
+          class="attack__pokemonTypeImage"
+        />
+      </div>
+
       <p class="attack__description">
         <span class="attack__name">Vampigraine</span>
         A moins que tous les dégats inflichés par cette attaque ne soient
         prévenus, vous pouvez retirer 1 marqueur de dégats de Bulbizarre.
       </p>
-      <div class="attack__degat">20</div>
-    </div>
 
-    <div class="footer">
-      <div class="footer__line"></div>
+      <div class="attack__damage">20</div>
+    </section>
 
-      <div class="footer__caracteristic">
-        <div class="footer__faiblesse">Faiblesse</div>
-        <div class="footer__resistance">Résistance</div>
-        <div class="footer__cout">Coût de retraite</div>
-      </div>
-      <div class="footer__caracteristic">
-        <div class="footer__faiblesseImage">Faiblesse</div>
-        <div class="footer__coutImage">Coût de retraite</div>
+    <footer class="footer">
+      <div>
+        <p class="footer__faiblesse">Faiblesse</p>
+        <img
+          src="./assets/img/fire.png"
+          alt="type feu"
+          class="footer__faiblesseImage"
+        />
       </div>
 
-      <p class="footer__history">
-        Il a ue étrange graine plantée sur son dos. Elle grandit avec lui depuis
-        la naissance. NIV. 13 No. 1
-      </p>
-    </div>
+      <div>
+        <p class="footer__resistance">Résistance</p>
+      </div>
+
+      <div>
+        <p class="footer__cout">Coût de retraite</p>
+        <img
+          src="./assets/img/normal.png"
+          alt="étoile"
+          class="footer__coutImage"
+        />
+      </div>
+    </footer>
+
+    <p class="pokedex">
+      Il a ue étrange graine plantée sur son dos. Elle grandit avec lui depuis
+      la naissance. NIV. 13 No. 1
+    </p>
   </body>
 </html>
