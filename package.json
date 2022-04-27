@@ -1,0 +1,25 @@
+{
+  "name": "tp-responsive-01-flex",
+  "version": "1.0.0",
+  "description": "https://drive.google.com/drive/folders/1coVjueV31hFbqqFdaA30LmG_PO82RGtu?usp=sharing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JessicaMarieSainte/tp-responsive-01-flex.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JessicaMarieSainte/tp-responsive-01-flex/issues"
+  },
+  "homepage": "https://github.com/JessicaMarieSainte/tp-responsive-01-flex#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.5.0",
+    "parcel": "^2.5.0"
+  }
+}

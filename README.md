@@ -55,9 +55,9 @@ SASS et les fichiers .scss vont nous permettre d'écrire notre CSS plus efficace
 
 Quand tout cela fonctionne :
 
-- Ajouter un fichier `styles.scss` à votre projet et l'importer à partir de l'index. Parcel s'occupera de la transformation en CSS.
+- Ajouter un fichier `styles.scss` à votre projet et l'importer dans index.html avec la balise link. Parcel s'occupera de la transformation en CSS.
 - Ajouter un fichier `reset.scss` à votre projet contenant le [reset CSS classique](https://meyerweb.com/eric/tools/css/reset/), sans l'importer dans l'index.html.
-- Dans le fichier `styles.scss`, utiliser un import SASS pour importer le fichier `reset.scss`.
+- Dans le fichier `styles.scss`, utiliser un import SASS "@import "./vendors/reset.scss"; pour importer le fichier `reset.scss` dans styles.scss.
 
 Dans vos projets, toujours inclure les deux règles CSS suivantes (rappel sur [box-sizing](https://developer.mozilla.org/fr/docs/Web/CSS/box-sizing)) :
 
