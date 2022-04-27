@@ -97,7 +97,7 @@ Pour ce faire, vous pouvez ajouter une mixin SASS en début de fichier :
 
 ```
 @mixin landscape {
-  @media (min-aspect-ratio: 1/1) {
+  @media (orientation: landscape) {
     @content;
   }
 }

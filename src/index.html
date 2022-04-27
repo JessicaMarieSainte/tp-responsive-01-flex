@@ -11,12 +11,12 @@
     <div class="card">
       <header class="identity">
         <div class="identity__pokemonTitle">
-          <div class="identity__Type">Pokemon de base</div>
+          <div class="identity__type">Pokemon de base</div>
           <h1 class="identity__name">Bulbizarre</h1>
         </div>
 
         <div class="identity__pokemonTypeDescription">
-          <h2 class="identity__life">40 PV</h2>
+          <span class="identity__life">40 PV</span>
           <img
             src="./assets/img/leaf.png"
             alt="type feuille"
@@ -26,29 +26,32 @@
       </header>
 
       <figure class="appearance">
-        <img
-          src="./assets/img/bulbizarre.jpg"
-          alt="bulbizarre"
-          class="appearance__pokemonImage"
-        />
+        <div class="pokemonImage">
+          <img
+            src="./assets/img/bulbizarre.jpg"
+            alt="bulbizarre"
+            class="appearance__pokemonImage"
+          />
+        </div>
+
         <figcaption class="appearance__imageCaption">
-          Pokemon Graine. Taille : 0,7m, poids: 6,9kg
+          Pokémon Graine. Taille : 0,7m, poids: 6,9kg
         </figcaption>
       </figure>
 
       <section class="attack">
-        <div class="attack__cost">
-          <img
-            src="./assets/img/leaf.png"
-            alt="cout feuille"
-            class="attack__pokemonTypeImage"
-          />
-          <img
-            src="./assets/img/leaf.png"
-            alt="cout feuille"
-            class="attack__pokemonTypeImage"
-          />
-        </div>
+        <!-- <div class="attack__cost"> -->
+        <img
+          src="./assets/img/leaf.png"
+          alt="cout feuille"
+          class="attack__pokemonTypeImage"
+        />
+        <img
+          src="./assets/img/leaf.png"
+          alt="cout feuille"
+          class="attack__pokemonTypeImage"
+        />
+        <!-- </div> -->
 
         <p class="attack__description">
           <span class="attack__name">Vampigraine</span>
@@ -58,35 +61,38 @@
 
         <div class="attack__damage">20</div>
       </section>
+    </div>
 
-      <footer class="footer">
-        <div>
-          <p class="footer__faiblesse">Faiblesse</p>
-          <img
-            src="./assets/img/fire.png"
-            alt="type feu"
-            class="footer__faiblesseImage"
-          />
-        </div>
+    <footer class="footer">
+      <div>
+        <p class="footer__faiblesse">Faiblesse</p>
+        <img
+          src="./assets/img/fire.png"
+          alt="type feu"
+          class="footer__faiblesseImage"
+        />
+      </div>
 
-        <div>
-          <p class="footer__resistance">Résistance</p>
-        </div>
+      <div>
+        <p class="footer__resistance">Résistance</p>
+      </div>
 
-        <div>
-          <p class="footer__cout">Coût de retraite</p>
-          <img
-            src="./assets/img/normal.png"
-            alt="étoile"
-            class="footer__coutImage"
-          />
-        </div>
-      </footer>
-
-      <p class="pokedex">
-        Il a ue étrange graine plantée sur son dos. Elle grandit avec lui depuis
-        la naissance. NIV. 13 No. 1
-      </p>
+      <div>
+        <p class="footer__cout">Coût de retraite</p>
+        <img
+          src="./assets/img/normal.png"
+          alt="étoile"
+          class="footer__coutImage"
+        />
+      </div>
+    </footer>
+    <div class="pokedex">
+      <div class="pokedex__border">
+        <p class="pokedex__description">
+          Il a ue étrange graine plantée sur son dos. Elle grandit avec lui
+          depuis la naissance. NIV. 13 No. 1
+        </p>
+      </div>
     </div>
   </body>
 </html>
